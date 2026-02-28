@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Redesign Checkout ZappyFood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <span class="logo">ZappyFood <span>Case Study</span></span>
+            <div class="nav-links">
+                <a href="#overview">Visão Geral</a>
+                <a href="#process">Processo</a>
+                <a href="#problem">As-Is / To-Be</a>
+                <a href="#motion">Motion</a>
+                <a href="#results">Resultados</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <span class="badge">Problema vs Solução</span>
+                <h1>Redesign do Fluxo de Checkout</h1>
+                <p>Simplificação da jornada de finalização do pedido, com foco em clareza, progressão e redução de 
+                    erros durante o pagamento.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">-40%</span>
+                            <span class="stat-label">Abandono</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-rocket"></i>
+                        <div class="stat-info">
+                            <span class="stat-value">+15%</span>
+                            <span class="stat-label">Conversão</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="zoom-in">
+                <img src="img/hero-02.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção de Visão Geral -->
+        <section id="overview" class="section container">
+            <div class="grid">
+                <div class="text-content" data-aos="fade-right">
+                    <span class="badge">Visão Geral</span>
+                    <h2>Contexto do <span>Desafio</span></h2>
+                    <p>Meu papel foi redesenhar a experiência de checkout, focando em reduzir a fricção cognitiva e transformar um fluxo confuso em uma jornada de conversão fluida e intuitiva.</p>
+                    
+                    <div class="overview-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-bullseye"></i>
+                            <div>
+                                <strong>Objetivo</strong>
+                                <span>Otimizar a conversão</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-user-clock"></i>
+                            <div>
+                                <strong>Foco</strong>
+                                <span>User Experience & UI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roles-grid">
+                    <div class="role-card as-is" data-aos="fade-up">
+                        <div class="card-header">
+                            <span class="status-icon"><i class="fas fa-times-circle"></i></span>
+                            <span class="status-badge">As-Is</span>
+                        </div>
+                        <h3>Situação Atual</h3>
+                        <p>Fluxo fragmentado e falta de clareza nos valores finais.</p>
+                        <ul class="status-list">
+                            <li><i class="fas fa-times"></i> Fricção excessiva no pagamento</li>
+                            <li><i class="fas fa-times"></i> Altas taxas de abandono (65%)</li>
+                        </ul>
+                    </div>
+                    <div class="role-card to-be" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-header">
+                            <span class="status-icon"><i class="fas fa-check-circle"></i></span>
+                            <span class="status-badge">To-Be</span>
+                        </div>
+                        <h3>Solução Proposta</h3>
+                        <p>Checkout single-page com arquitetura de informação otimizada.</p>
+                        <ul class="status-list">
+                            <li><i class="fas fa-check"></i> Redução de carga cognitiva</li>
+                            <li><i class="fas fa-check"></i> Transparência e conversão acelerada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Processo -->
+        <section id="process" class="section dark">
+            <div class="container">
+                <h2 class="text-center">Processo de UX Research</h2>
+                <div class="process-steps">
+                    <div class="step" data-aos="fade-right">
+                        <div class="step-number">01</div>
+                        <h3>Pesquisa</h3>
+                        <p>Análise de comportamento revelou paralisia de decisão.</p>
+                    </div>
+                    <div class="step" data-aos="fade-right" data-aos-delay="100">
+                        <div class="step-number">02</div>
+                        <h3>Definição</h3>
+                        <p>Mapeamento de jornada crítica com foco em conversão.</p>
+                    </div>
+                    <div class="step" data-aos="fade-right" data-aos-delay="200">
+                        <div class="step-number">03</div>
+                        <h3>Ideação</h3>
+                        <p>Wireframes focados em feedback e redução de carga cognitiva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Problema (As-Is) -->
+        <section id="problem" class="section container">
+            <div class="text-center">
+                <h2>A Experiência Atual (As-Is)</h2>
+            </div>
+            <div class="grid">
+                <div class="ui-text">
+                    <span class="badge problem-badge">O Problema</span>
+                    <h3>Jornada Fragmentada <span>e Alta Fricção</span></h3>
+                    <p class="ui-description" style="border-left-color: #e74c3c;">Antes do redesign, o fluxo de checkout sofria com sérios problemas de usabilidade que resultavam em 65% de abandono. Os usuários enfrentavam uma jornada fragmentada.</p>
+                    
+                    <div class="problem-cards">
+                        <div class="p-card" data-aos="fade-up">
+                            <span class="card-counter">01</span>
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>Etapas Desnecessárias</h4>
+                            <p>O processo de checkout exigia múltiplas transições de tela para uma tarefa simples, elevando a carga cognitiva e o tempo de conclusão.</p>
+                        </div>
+                        <div class="p-card" data-aos="fade-up" data-aos-delay="100">
+                            <span class="card-counter">02</span>
+                            <i class="fas fa-eye-slash"></i>
+                            <h4>CTA Pouco Evidente</h4>
+                            <p>O botão de continuidade não se destacava visualmente, dificultando a identificação da próxima ação e interrompendo o fluxo de navegação.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="old-ui-showcase" data-aos="fade-left">
+                    <div class="wireframe-mobile">
+                        <div class="wf-header">Checkout</div>
+                        <div class="wf-step">1. Endereço <i class="fas fa-chevron-right"></i></div>
+                        <div class="wf-step">2. Pagamento <i class="fas fa-chevron-right"></i></div>
+                        <div class="wf-step">3. Resumo <i class="fas fa-chevron-right"></i></div>
+                        <div class="wf-button">Finalizar Pedido</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção da Solução (To-Be) -->
+        <section id="solution" class="section container">
+            <h2 class="text-center">A Solução: UI Interativa (To-Be)</h2>
+            <div class="ui-showcase">
+                <div class="ui-text">
+                    <span class="badge">Solução Proposta</span>
+                    <h3>Arquitetura de Informação <span>e Hierarquia Visual</span></h3>
+                    <p class="ui-description">Apliquei princípios de simplificação para reduzir a carga cognitiva do usuário e orientar 
+                        a tomada de decisão ao longo de um <strong>fluxo interativo de finalização do pedido.</strong> </p>
+                    
+                    <div class="solution-cards">
+                        <div class="s-card" data-aos="fade-up">
+                            <span class="card-counter">01</span>
+                            <i class="fas fa-bullseye"></i>
+                            <h4>Foco Cognitivo</h4>
+                            <p>A informação é apresentada em etapas claras, com um único objetivo por tela, reduzindo a carga mental e 
+                                evitando decisões desnecessárias durante a finalização do pedido.</p>
+                        </div>
+                        <div class="s-card" data-aos="fade-up" data-aos-delay="100">
+                            <span class="card-counter">02</span>
+                            <i class="fas fa-bolt"></i>
+                            <h4>Feedback Instantâneo</h4>
+                            <p>A progressão sequencial do fluxo interativo (Endereço → Forma de pagamento → Revisar pedido) fornece feedback imediato sobre o avanço do processo, ajudando o usuário a 
+                                entender onde está e o que falta para concluir.</p>
+                        </div>
+                        <div class="s-card" data-aos="fade-up" data-aos-delay="200">
+                            <span class="card-counter">03</span>
+                            <i class="fas fa-layer-group"></i>
+                            <h4>Estrutura Modular</h4>
+                            <p>O layout é construído a partir de componentes reutilizáveis (etapas, botões e ações), permitindo manter consistência visual e facilitar a 
+                                inclusão de novas etapas sem quebrar o fluxo.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-sticky-wrapper">
+                    <div class="demo-card">
+                        <div class="demo-header">
+                            <div class="status-bar">
+                                <span class="time">09:41</span>
+                                <div class="status-icons">
+                                    <i class="fas fa-signal"></i>
+                                    <i class="fas fa-wifi"></i>
+                                    <i class="fas fa-battery-full"></i>
+                                </div>
+                            </div>
+                            <div class="nav-bar">
+                                <button class="btn-icon" onclick="resetDemo()"><i class="fas fa-chevron-left"></i></button>
+                                <span class="nav-title">Finalizar Pedido</span>
+                                <button class="btn-icon"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+                        </div>
+                        <div class="demo-body">
+                            <div class="checkout-accordion active" id="step-address">
+                                <div class="accordion-header">
+                                    <span>1. Endereço</span>
+                                    <button class="btn-edit" id="edit-address" onclick="editStep('address')">
+                                        <i class="fas fa-pen"></i> Alterar
+                                    </button>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Rua das Andorinhas, 123 - Centro</p>
+                                    <div class="action-btn-row">
+                                        <button class="btn-demo" onclick="nextStep('payment')">Continuar</button>
+                                        <i class="fas fa-arrow-left arrow-anim"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-accordion" id="step-payment">
+                                <div class="accordion-header">
+                                    <span>2. Forma de Pagamento</span>
+                                    <button class="btn-edit" id="edit-payment" onclick="editStep('payment')">
+                                        <i class="fas fa-pen"></i> Alterar
+                                    </button>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="payment-methods">
+                                        <div class="method active">Cartão de Crédito - 4422</div>
+                                    </div>
+                                    <div class="input-group" id="cvv-group">
+                                        <label for="cvv-input">CVV do Cartão</label>
+                                        <input type="text" id="cvv-input" placeholder="123" maxlength="3">
+                                        <span class="error-msg">Campo obrigatório</span>
+                                    </div>
+                                    <button class="btn-demo" onclick="validatePaymentAndNext()">Continuar</button>
+                                </div>
+                            </div>
+                            <div class="checkout-accordion" id="step-confirm">
+                                <div class="accordion-header">
+                                    <span>3. Revisar Pedido</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="order-summary">
+                                        <div class="order-item">
+                                            <span class="item-qtd">1x</span>
+                                            <span class="item-name">Zappy Burger Duplo</span>
+                                            <span class="item-price">R$ 35,90</span>
+                                        </div>
+                                        <div class="order-item delivery">
+                                            <span class="item-name">Taxa de Entrega</span>
+                                            <span class="item-price">R$ 6,90</span>
+                                        </div>
+                                    </div>
+                                    <div class="total-row">
+                                        <span>Total</span>
+                                        <span>R$ 42,80</span>
+                                    </div>
+                                    <button class="btn-primary-demo" id="pay-btn">Finalizar Pedido</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-bar">
+                                <div class="tab-item">
+                                    <i class="fas fa-receipt"></i>
+                                    <span>Pedidos</span>
+                                </div>
+                                <div class="tab-item active">
+                                    <i class="fas fa-home"></i>
+                                    <span>Home</span>
+                                </div>
+                                <div class="tab-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Perfil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Motion Design -->
+        <section id="motion" class="section dark">
+            <div class="container">
+                <h2 class="text-center">Motion Design Estratégico</h2>
+                <div class="motion-grid">
+                    <div class="motion-card" data-aos="fade-up">
+                        <div class="motion-icon-wrapper">
+                            <i class="fas fa-sync-alt fa-spin-slow"></i>
+                            <div class="icon-blur"></div>
+                        </div>
+                        <h3>Transições Suaves</h3>
+                        <p>Uso de animações com ritmo natural para reduzir a percepção de espera.</p>
+                    </div>
+                    <div class="motion-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="motion-icon-wrapper success">
+                            <i class="fas fa-check-double fa-pulse-custom"></i>
+                            <div class="icon-blur"></div>
+                        </div>
+                        <h3>Feedback de Sucesso</h3>
+                        <p>Animações que confirmam o processamento do pagamento com fluidez.</p>
+                    </div>
+                    <div class="motion-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="motion-icon-wrapper error">
+                            <i class="fas fa-exclamation-circle fa-shake-custom"></i>
+                            <div class="icon-blur"></div>
+                        </div>
+                        <h3>Prevenção de Erro</h3>
+                        <p>Micro-shake em campos inválidos para guiar o olhar sem frustrar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Resultados -->
+        <section id="results" class="section container">
+            <h2 class="text-center">Resultados e Aprendizados</h2>
+            
+            <div class="metrics-container" data-aos="fade-up">
+                
+                <div class="metric-chart">
+                    <div class="chart-header">
+                        <h3>Taxa de Abandono<br> no Checkout</h3>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="dot before"></span> Antes</span>
+                            <span class="legend-item"><span class="dot after-error"></span> Depois</span>
+                        </div>
+                    </div>
+                    <div class="chart-track">
+                        <div class="chart-bar before" style="--target-width: 65%">
+                            <span class="bar-label">65%</span>
+                        </div>
+                        <div class="chart-bar after-error" style="--target-width: 25%">
+                            <span class="bar-label">25%</span>
+                        </div>
+                    </div>
+                    <p class="chart-note">* Redução vital no atrito da etapa de pagamento (queda de 40 pontos na evasão).</p>
+                </div>
+
+                <div class="metric-chart">
+                    <div class="chart-header">
+                        <h3>Taxa de Conversão Real</h3>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="dot before"></span> Antes</span>
+                            <span class="legend-item"><span class="dot after"></span> Depois</span>
+                        </div>
+                    </div>
+                    <div class="chart-track">
+                        <div class="chart-bar before" style="--target-width: 35%">
+                            <span class="bar-label">35%</span>
+                        </div>
+                        <div class="chart-bar after" style="--target-width: 50.2%">
+                            <span class="bar-label">50.2%</span>
+                        </div>
+                    </div>
+                    <p class="chart-note">* Aumento sustentável influenciado pelo design single-page.</p>
+                </div>
+
+                <div class="metric-chart">
+                    <div class="chart-header">
+                        <h3>Tempo Médio de Checkout (Seg)</h3>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="dot before"></span> Antes</span>
+                            <span class="legend-item"><span class="dot after-alt"></span> Depois</span>
+                        </div>
+                    </div>
+                    <div class="chart-track">
+                        <div class="chart-bar before" style="--target-width: 100%">
+                            <span class="bar-label">105s</span>
+                        </div>
+                        <div class="chart-bar after-alt" style="--target-width: 40%">
+                            <span class="bar-label">42s</span>
+                        </div>
+                    </div>
+                    <p class="chart-note">* Redução de 60% no esforço cognitivo e temporal do usuário.</p>
+                </div>
+                
+                <div class="metric-chart">
+                    <div class="chart-header">
+                        <h3>Satisfação do Usuário (CSAT)</h3>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="dot before"></span> Antes</span>
+                            <span class="legend-item"><span class="dot after-success"></span> Depois</span>
+                        </div>
+                    </div>
+                    <div class="chart-track">
+                        <div class="chart-bar before" style="--target-width: 50%">
+                            <span class="bar-label">2.5/5.0</span>
+                        </div>
+                        <div class="chart-bar after-success" style="--target-width: 96%">
+                            <span class="bar-label">4.8/5.0</span>
+                        </div>
+                    </div>
+                    <p class="chart-note">* Avaliação de feedback imediato pós-experiência.</p>
+                </div>
+
+            </div>
+
+            <div class="results-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="result-item">
+                    <div class="result-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="result-text">
+                        <h4>Aprendizado Principal</h4>
+                        <p>O Motion Design não é apenas decorativo, ele atua como um sistema de <strong>confirmação que reduz o abandono</strong>.</p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="result-text">
+                        <h4>Próximo Passo</h4>
+                        <p>Validar o fluxo com usuários reais por meio de <strong>testes A/B</strong>, avaliando variações de microcopy e feedback visual para 
+                            aumentar a <strong>taxa de conclusão do pedido.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 UX Case Study - ZappyFood - Design Estratégico. <br> UX/UI Designer Marcelo Guedes</p>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
